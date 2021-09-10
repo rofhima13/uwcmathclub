@@ -1,0 +1,57 @@
+{% extends "mathclub/layout.html" %}
+{% load static %}
+
+{% block title %}Home | {% endblock %}
+
+{% block body %}
+    <div></div>
+    <div class="post card">
+        <div class="content"><h1>Welcome to UWC Math Club</h1></div>
+        <div id="welcome-text" class="body-text">For students. By students.</div>
+        <img src="{% static 'mathclub/images/mc.webp' %}">
+        <div class="content"></div>
+    </div>
+    <div>
+        <a id="events-card" href="{% url 'mathclub:events' %}">
+            <div class="card content"><h2>Events</h2></div>
+
+            <div class="event-link">
+                <div class="event-date">
+                    <div class="event-day">XX</div>
+                    <div class="event-month">XXX</div>
+                </div>
+                <div class="event-info">
+                    <div class="event-name">Event name goes here</div>
+                    <div class="event-description">Event description goes here</div>
+                </div>
+            </div>
+
+        </a>
+    </div>
+
+    <div></div>
+    <div class="post card">
+        <div class="content"><h1>UWC Math Club First Webinar</h1></div>
+        <img src="https://images.unsplash.com/photo-1557804506-e969d7b32a4b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=728&q=80">
+        <div class="content">
+            <div class="body-text">We just have something interesting for everyone who is part of the MathClub. 
+
+
+            1st year, 2nd year, 3rd year or 4th year, you will definitely benefit from it!
+            
+            
+            The MathClub is organizing a Live Webinar on Monday the 24th, August 2020. The session will cover couple of interesting topics relating the Academic life experience vs the Professional life experience. But there will also be other interesting topics ( how to identify your core skills, collaboration management during the pandemic, retaining your critical knowledge as the post-academic life can smash you in the face when you're not ready).
+            
+            The meet-up will be very interactive and we need all of you so that we can have a fruitful Q&A session.
+            
+            Whatever field of expertise you are in, does not matter as many presenters from different background will be present. 
+            
+            *SIGN UP HERE:* <a href="https://forms.gle/FSbdFmVQ7PUrsPLx8">https://forms.gle/FSbdFmVQ7PUrsPLx8</a>
+            
+            See you next Monday folks and have a great week ahead!
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+{% endblock %}

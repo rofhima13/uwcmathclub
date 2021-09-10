@@ -1,0 +1,320 @@
+body {
+    background-image: url("images/wp.jpg");
+    background-size: 300px;
+    overflow-x: hidden;
+    max-width: 100%;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body > * {
+    z-index: 0;
+}
+
+header:hover, .card:hover {
+    background-color: #000000;
+    transition-duration: 0.2s;
+}
+
+#body-tint {
+    width: 100%;
+    height: 100%;
+    background-color: #2882e744;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+header {
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100px;
+    background-color: #000000df;
+    box-shadow: 0px 0px 3px black;
+    color: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #2882e7;
+}
+
+header, .card {
+    transition-duration: 0.2s;
+}
+
+header img {
+    margin-left: 20px;
+}
+
+#nav {
+    float: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 20px;
+}
+
+#nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#nav li a:hover {
+    color: #2882e7;
+}
+
+#nav li a:active {
+    color: #aaaaaa;
+}
+
+#main {
+    margin-top: 130px;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    grid-template-columns: auto 50% auto;
+}
+
+.post {
+    margin: auto;
+    min-width: 500px;
+    text-align: center;
+}
+
+.card {
+    background-color: #000000df;
+    color: #ffffff;
+    box-shadow: 0px 0px 1px #000000;
+}
+
+.exec-pp {
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.exec-info {
+    text-align: center;
+    margin: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.exec-container {
+    min-width: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 250px;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 60px;
+    color: white;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #2882e7;
+    text-decoration-thickness: 3px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+h3 {
+    font-family: "Oswald", sans-serif;
+}
+
+#events-card {
+    height: auto;
+    text-decoration: none;
+}
+
+#events-card > * {
+    cursor: pointer;
+}
+
+#events-card > .card {
+    margin: 0;
+    padding: 5px;
+}
+
+.event-link {
+    background-color: #000000ee;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    transition-duration: 0.2s;
+    padding: 5px;
+}
+
+.event-date {
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: 25px 25px;
+    width: 50px;
+}
+
+.event-date > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+}
+
+.event-date:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #2882e7;
+}
+
+.event-info {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25px 25px;
+}
+
+.event-info > * {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+}
+
+.event-description {
+    font-family: "Oswald", sans-serif;
+    text-transform: none;
+    font-size: 13px;
+}
+
+.event-link:hover, input:hover, select:hover, textarea:hover{
+    background-color: #222222ee;
+    transition-duration: 0.2s;
+}
+.body-text, #welcome-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+}
+
+#welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+.post img {
+    width: 100%;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-event-info {
+    font-family: "Oswald", sans-serif;
+}
+
+#cams-banner {
+    width: 100%;
+    background-image: url("https://cs.uwc.ac.za/wp-content/uploads/2019/02/2-r.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    color: #ffffff;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #666666;
+}
+
+input[type="submit"] {
+    width: 50%;
+}
+
+#study-container {
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#study-container .card {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#study-container .card:hover {
+    background-color: #000000df;
+}
+
+#study-container .card:active {
+    background-color: #000000;
+    transition-duration: 0.2s;
+}
+
+#study-container h2 {
+    font-size: 90px;
+    text-decoration: none;
+}
+
+#study-container .card:hover {
+    text-decoration: underline;
+    text-decoration-color: #2882e7;
+}
+
+#study-container > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hs-image {
+    background-image: url("https://www.orban.co.za/wp-content/uploads/2020/09/DSC1445-1024x678.jpeg");
+}
+
+#uni-image {
+    background-image: url("https://cdn.pixabay.com/photo/2017/09/08/00/38/friend-2727307_960_720.jpg");
+}
+
+#hs-image, #uni-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

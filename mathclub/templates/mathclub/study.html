@@ -1,0 +1,32 @@
+{% extends "mathclub/layout.html" %}
+{% load static %}
+
+{% block title %}Study | {% endblock %}
+
+{% block alt-body %}
+    <style>
+        header {
+            height: 0px;
+            border-bottom: 10px solid #2882e7;
+        }
+
+        header:hover {
+            height: 100px;
+            transition-duration: 0.3s;
+            border-bottom: 5px solid #2882e7;
+        }
+    </style>
+
+    <div id="study-container">
+        <div id="hs-image"></div>
+        <div id="uni-image"></div>
+    </div>
+    <div id="study-container">
+        <a href="about:blank" class="card">
+            <div class="content"><h2>High School</h2></div>
+        </a>
+        <a href="about:blank" class="card">
+            <div class="content"><h2>University</h2></div>
+        </a>
+    </div>
+{% endblock %}

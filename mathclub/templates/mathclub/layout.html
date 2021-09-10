@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}UWC Math Club</title>
+        <link rel="stylesheet" href="{% static 'mathclub/styles.css' %}">
+        <link rel="shortcut icon" type="image/jpg" href="{% static 'mathclub/images/favicon.png' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="body-tint"></div>
+        <header>
+            <a href="index.html"><img src="{% static 'mathclub/images/nav-logo.png' %}" height="60px"></a>
+            <a href="https://www.uwc.ac.za/"><img src="{% static 'mathclub/images/uwc.svg' %}" height="60px"></a>
+            <ul id="nav">
+                <li><a href="{% url 'mathclub:index' %}">Home</a></li>
+                <li><a href="{% url 'mathclub:about' %}">About</a></li>
+                <li><a href="{% url 'mathclub:events' %}">Events</a></li>
+                <li><a href="{% url 'mathclub:study' %}">Study</a></li>
+                <li><a href="{% url 'mathclub:team' %}">Team</a></li>
+                <li><a href="{% url 'mathclub:contact' %}">Contact Us</a></li>
+            </ul>
+        </header>
+        {% block alt-body %}
+        <div id="main">
+            {% block body %}
+
+            {% endblock %}
+        </div>
+        {% endblock %}
+    </body>
+</html>
